@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h2 {
+            color: rgb(184, 238, 133) gb(255, 0, 230);
+            font-size: 24px;
+            text-decoration: wavy underline rgb(188, 82, 116);
+            ;
+        }
+
+        .text {
+            color: rgb(171, 36, 72);
+            font-size: 30px;
+            border: 2px solid rgb(9, 1, 65);
+        }
+
+        #mytext {
+            background-color: rgb(247, 164, 243);
+            color: rgb(149, 30, 30);
+            font-size: 40px;
+            border: 2px solid black;
+        }
+
+        h3 {
+            color: rgb(24, 94, 5) !important;
+            font-size: 49px;
+
+        }
+
+        .myclass {
+            color: rgb(74, 47, 210);
+            font-size: 30px;
+        }
+
+        #myid {
+            color: rgb(114, 225, 136);
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color: rgb(72, 0, 72); font-size: 50px;">Inline css is used to style individual tag only</h1>
+
+    <h2>Internal css is used to style multiple tags within the same page</h2>
+
+    <h2>Name selector is used to select elements by their tag name</h2>
+    <h2 class="text"> Name selector is used to select elements by their tag name</h2>
+
+    <p class="text">Class selector is used to select elements by their class name</p>
+
+    <p id="mytext">ID selector is used to select elements by their ID</p>
+
+    <h3 class="myclass" id="myid" style="color: gold;">Selector Priority</h3>
+
+    <button class="btn">Submit</button>
+
+</body>
+
+</html>
