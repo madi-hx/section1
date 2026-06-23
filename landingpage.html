@@ -1,108 +1,159 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body class="bg-red-100 md:bg-gradient-to-r from-purple-300 to-pink-300 min-h-screen flex flex-col xl:bg-gradient-to-r xl:from-green-300 xl:to-blue-300 ">
-    
-    <header class="text-gray-400 bg-gray-900 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-      <a class="mr-5 hover:text-white">First Link</a>
-      <a class="mr-5 hover:text-white">Second Link</a>
-      <a class="mr-5 hover:text-white">Third Link</a>
-      <a class="hover:text-white">Fourth Link</a>
-    </nav>
-    <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span class="ml-3 text-xl xl:block lg:hidden">Tailblocks</span>
-    </a>
-    <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-      <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body
+  class="bg-red-100 md:bg-gradient-to-r from-purple-300 to-pink-300 min-h-screen flex flex-col xl:bg-gradient-to-r xl:from-green-300 xl:to-blue-300 ">
+
+  <header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <a class="mr-5 hover:text-white">First Link</a>
+        <a class="mr-5 hover:text-white">Second Link</a>
+        <a class="mr-5 hover:text-white">Third Link</a>
+        <a class="hover:text-white">Fourth Link</a>
+      </nav>
+      <a
+        class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
-      </button>
+        <span class="ml-3 text-xl xl:block lg:hidden">Tailblocks</span>
+      </a>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+        <button
+          class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
-</header>
-    <main>
+  </header>
+  <main>
 
-        <article>
+    <article>
 
-            <section class="px-5 md:px-0 container mx-auto p-8">
+      <section class="px-5 md:px-0 container mx-auto p-8">
 
-                <div class="grid grid-cols-1 md:grid-cols-2 px-10">
-                    <div class="space-y-6 my-auto text-center md:text-left">
-                        <h1 class="text-3xl md:text-6xl font-semibold">Hero Section Title 
-                            Should be here
-                        </h1>
-                        <p class="text-lg text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident animi deserunt commodi adipisci consectetur alias dolor, totam magni eveniet odit perspiciatis quod praesentium esse 
-                            accusantium iusto nesciunt mollitia est quae?</p>
-                        <div class="flex justify-center md:justify-start gap-4">
-                            <button class="bg-linear-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-3xl
+        <div class="grid grid-cols-1 md:grid-cols-2 px-10">
+          <div class="space-y-6 my-auto text-center md:text-left">
+            <h1 class="text-3xl md:text-6xl font-semibold">Hero Section Title
+              Should be here
+            </h1>
+            <p class="text-lg text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident animi
+              deserunt commodi adipisci consectetur alias dolor, totam magni eveniet odit perspiciatis quod praesentium
+              esse
+              accusantium iusto nesciunt mollitia est quae?</p>
+            <div class="flex justify-center md:justify-start gap-4">
+              <button class="bg-linear-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-3xl
                             px-4 py-2 rounded-3xl hover:scale-90 duration-300">Get Started</button>
 
-                            <button class="bg-white border
+              <button class="bg-white border
                                     px-4 py-2 rounded-3xl hover:scale-90 duration-300">Learn More
 
-                            </button>
+              </button>
 
-                        </div>
-                    </div>
-                    <div class="order-first md:order-last">
-                        <img src="hero.svg" alt="">
-                    </div>
+            </div>
+          </div>
+          <div class="order-first md:order-last">
+            <img src="hero.svg" alt="">
+          </div>
 
-                </div>
+        </div>
 
-            </section>
+      </section>
 
-        </article>
+    </article>
 
-        <article>
-            <section class="px-5 md:px-0 container mx-auto p-8">
+    <article>
+      <section class="px-5 md:px-0 container mx-auto p-8">
 
-                <h2 class="text-2xl font-semibold text-center mb-8">Our Features</h2>
+        <h2 class="text-2xl font-semibold text-center mb-8">Our Features</h2>
 
-                <div class="mt-10 grid grid-cols-3 px-10 gap-8">
-                    <div class=" p-8 space-y-4 text-center bg-white rounded-lg shadow-lg hover:scale-110 duration-300">
-                        <i class="fa-brands fa-bluesky fa-3x"></i>
-                        <h3 class="text-2xl font-semibold">Card Title</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quia impedit est inventore corrupti asperiores ratione officia nisi cumque repudiandae.</p>
-                        <button class="bg-linear-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-3xl w-full hover:scale-90 duration-300">Learn More</button>
-                    </div>
-                
-          
-                    <div class=" p-8 space-y-4 text-center bg-white rounded-lg shadow-lg hover:scale-110 duration-300">
-                        <i class="fa-brands fa-bluesky fa-3x"></i>
-                        <h3 class="text-2xl font-semibold">Card Title</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quia impedit est inventore corrupti asperiores ratione officia nisi cumque repudiandae.</p>
-                        <button class="bg-linear-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-3xl w-full hover:scale-90 duration-300">Learn More</button>
-                    </div>
-                
-               
-                    <div class=" p-8 space-y-4 text-center bg-white rounded-lg shadow-lg hover:scale-110 duration-300">
-                        <i class="fa-brands fa-bluesky fa-3x"></i>
-                        <h3 class="text-2xl font-semibold">Card Title</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quia impedit est inventore corrupti asperiores ratione officia nisi cumque repudiandae.</p>
-                        <button class="bg-linear-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-3xl w-full hover:scale-90 duration-300">Learn More</button>
-                    </div>
-                </div>
+        <div class="mt-10 grid grid-cols-3 px-10 gap-8">
+          <div class=" p-8 space-y-4 text-center bg-white rounded-lg shadow-lg hover:scale-110 duration-300">
+            <i class="fa-brands fa-bluesky fa-3x"></i>
+            <h3 class="text-2xl font-semibold">Card Title</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quia impedit est
+              inventore corrupti asperiores ratione officia nisi cumque repudiandae.</p>
+            <button
+              class="bg-linear-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-3xl w-full hover:scale-90 duration-300">Learn
+              More</button>
+          </div>
 
-            </section>
-        </article>
 
-    </main>
+          <div class=" p-8 space-y-4 text-center bg-white rounded-lg shadow-lg hover:scale-110 duration-300">
+            <i class="fa-brands fa-bluesky fa-3x"></i>
+            <h3 class="text-2xl font-semibold">Card Title</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quia impedit est
+              inventore corrupti asperiores ratione officia nisi cumque repudiandae.</p>
+            <button
+              class="bg-linear-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-3xl w-full hover:scale-90 duration-300">Learn
+              More</button>
+          </div>
 
-    <footer>
 
-    </footer>
+          <div class=" p-8 space-y-4 text-center bg-white rounded-lg shadow-lg hover:scale-110 duration-300">
+            <i class="fa-brands fa-bluesky fa-3x"></i>
+            <h3 class="text-2xl font-semibold">Card Title</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quia impedit est
+              inventore corrupti asperiores ratione officia nisi cumque repudiandae.</p>
+            <button
+              class="bg-linear-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-3xl w-full hover:scale-90 duration-300">Learn
+              More</button>
+          </div>
+        </div>
 
-  </body>
+      </section>
+
+      <section class="px-5 md:px-0 container mx-auto p-8 gap-8  ">
+
+        <h2 class="text-2xl font-semibold text-center mb-8">Our Features</h2>
+        <div class="flex flex-col md:flex-row gap-4 flex justify-center w-1/2 mx-auto">
+          <div class="relative flex-grow flex justify-center ">
+            <input type="text" class="border text center p-4 pl-10 rounded-3xl w-full md:w-1/2 px-4 flex-grow "
+              placeholder="Search for something...">
+            <i class="absolute left-3 top-1/2 transform -translate-y-1/2 fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <button
+            class="bg-linear-to-r from-purple-500 to-pink-500 text-white p-4 rounded-3xl  hover:scale-90 duration-30">Search</button>
+        </div>
+
+        <div class="grid grid-cols-2">
+          <div>
+            <img  src="hehe.svg" alt="Hero Image">
+
+          </div>
+
+          <div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </article>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+</body>
+
 </html>
